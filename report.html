@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report - Findez</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <a href="index.html" class="logo"><img src="logo.png" alt="Findez"></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><u><a href="report.html">Report</a></u></li>
+                <li><a href="feed.html">Feed</a></li>
+                <li><a href="redeem.html" class="btn-redeem">Redeem</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="page-content">
+        <div class="container">
+            <h1>Report Lost or Found Item</h1>
+            <!-- <div class="tabs">
+                <button class="tab-btn active" data-tab="lost">I Lost an Item</button>
+                <button class="tab-btn" data-tab="found">I Found an Item</button>
+            </div> -->
+            <div class="tab-content active" id="lost-form">
+                <form class="card">
+                    <div class="form-group">
+                        <label for="lost-item-photo">Photo of Lost Item</label>
+                        <input type="file" id="lost-item-photo" accept="image/*">
+                    </div>
+                    <div class="form-group">
+                        <label for="lost-item-name">Item Name</label>
+                        <input type="text" id="lost-item-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lost-item-details">Details about the item</label>
+                        <textarea id="lost-item-details" rows="4" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="lost-phone">Phone Number</label>
+                        <input type="tel" id="lost-phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lost-location">Last Known Location</label>
+                        <input type="text" id="lost-location" required>
+                    </div>
+                    <button type="submit" class="btn-submit">Submit Report</button>
+                </form>
+            </div>
+            <div class="tab-content" id="found-form">
+                <form class="card">
+                    <div class="form-group">
+                        <label for="found-item-photo">Photo of Found Item</label>
+                        <input type="file" id="found-item-photo" accept="image/*">
+                    </div>
+                    <div class="form-group">
+                        <label for="found-item-name">Item Name</label>
+                        <input type="text" id="found-item-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="found-phone">Phone Number</label>
+                        <input type="tel" id="found-phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="item-code">Item Code</label>
+                        <input type="text" id="item-code" required>
+                        <small>You can find this code in the Feed section for the matching lost item</small>
+                    </div>
+                    <button type="submit" class="btn-submit">Submit Report</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,250 @@
+:root {
+    --primary: #4318ff;
+    --secondary: #f3e8ff;
+    --text: #333;
+    --background: #f4edef;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text);
+    background-color: var(--background);
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  nav {
+    background-color: var(--primary);
+    min-width: 350px;
+    color: white;
+    padding: 1rem 0;
+    font-size: large;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+  }
+  
+  nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  nav a:hover{
+    color: black;
+  }
+  .nav-links .btn-redeem:hover{
+    color: black;
+  }
+  /* .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+  } */
+  .logo img{
+    width: 60px;
+  } 
+  
+
+  .nav-links {
+    display: flex;
+    list-style: none;
+  }
+  
+  .nav-links li {
+    margin-left: 1.5rem;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .nav-links .btn-redeem {
+    background-color: var(--secondary);
+    color: var(--primary);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+  }
+  
+  .home-page {
+    padding: 4rem 0;
+  }
+  
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .hero-content {
+    flex: 1;
+  }
+  
+  .hero h1 {
+    font-weight: 1000;
+    font-size: 4rem;
+    color: var(--primary);
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+  }
+  
+  .hero p {
+    color: #bc4b4b;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .cta-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-left: 4rem;
+  }
+  
+  .btn {
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .btn-primary {
+    background-color: #ff4b4b;
+    color: white;
+  }
+  .btn-primary:hover{
+    background-color: #f01d1d;
+  }
+  
+  .btn-secondary {
+    background-color: white;
+    color: var(--primary);
+    border: 2px solid var(--primary);
+  }
+  .btn-secondary:hover{
+    background-color: whitesmoke;
+  }
+  
+  .hero-image {
+    flex: 1;
+    text-align: right;
+  }
+  
+  .hero-image img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .hero {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .hero-image {
+      margin-top: 2rem;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      display: row;
+    }
+  }
+  
+  /* Styles for other pages */
+  .page-content {
+    padding: 2rem 0;
+  }
+  
+  .card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .btn-submit {
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+  .text-red {
+    color: red;
+    font-weight: bold;
+}
+
+.text-green {
+    color: green;
+    font-weight: bold;
+}
+.about{
+  margin: 2rem;
+  margin-top: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.about #desc{
+ font-size: large;
+ font-weight: bold;
+}
+.about #about{
+  font-size: 3rem;
+  font-weight: bold;
+  animation: ts 2s linear infinite;
+}
+@keyframes ts {
+  0%{
+    color: var(--primary);
+  }
+  50%{
+    color: var(--text);
+  }
+  100%{
+    color: var(--primary);
+  }
+}
+
+  
