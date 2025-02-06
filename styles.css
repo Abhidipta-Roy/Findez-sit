@@ -246,5 +246,14 @@
     color: var(--primary);
   }
 }
-
+.cont{
+  box-sizing: border-box;
+  position: absolute;
+} 
+.cont img{
+  margin-top: 2rem;
+  width: 90vw;
+  height: 85vh;
+  object-fit: cover;
+}
   
